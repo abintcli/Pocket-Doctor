@@ -1,0 +1,102 @@
+<div class="row">
+  <div class="panel">
+    <div class="panel-heading auth-panel-heading">
+      <div class="row">
+        <div class="btn-group btn-group-justified">
+          <a class="btn btn-default auth-panel-header" id="login-header-button" (click)="showLogin = true; showRegister = false;">Login</a>
+          <a class="btn btn-primary auth-panel-header" id="register-header-button" (click)="showLogin = false; showRegister = true;">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-lg-12">
+          <div *ngIf="showRegister">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <form>
+                <h4>General</h4>
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select class="form-control" id="gender" name="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="IDnumber">ID number</label>
+                  <input type="text" class="form-control" id="IDnumber" name="IDnumber">
+                </div>
+                <br>
+                <h4>Contact Info</h4>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone number</label>
+                  <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+                </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="text" class="form-control" id="email" name="email">
+                </div>
+                <br>
+                <h4>Adress</h4>
+                <div class="form-group">
+                  <label for="streetAdress">Street Adress</label>
+                  <input type="text" class="form-control" id="streetAdress" name="streetAdress">
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control" id="city" name="city">
+                </div>
+                <div class="form-group">
+                  <label for="postalCode">Postal Code</label>
+                  <input type="text" class="form-control" id="postalCode" name="postalCode">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" class="form-control" name="password">
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <input type="password" id="confirmPassword" class="form-control" name="confirmPassword">
+                </div>
+                <div class="col-md-8 text-center">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+              <br>
+            </div>
+          </div>
+
+          <div *ngIf="showLogin">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <form>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="text" class="form-control" id="email" name="email">
+                </div>
+                <br>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="text" class="form-control" id="password" name="password">
+                </div>
+                <div class="col-md-8 text-center">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

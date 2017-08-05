@@ -1,19 +1,37 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Pocket Docter</title>
   <base href="/">
+ <!-- <link media="all" type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation-flex.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">-->
+  <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
 
-	<link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
   <app-root></app-root>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB1seqEtYitV4DWXy8-nDW6ZaMUiCmUKy8",
+      authDomain: "pocket-docter.firebaseapp.com",
+      databaseURL: "https://pocket-docter.firebaseio.com",
+      projectId: "pocket-docter",
+      storageBucket: "pocket-docter.appspot.com",
+      messagingSenderId: "232051558449"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
+
 </html>
